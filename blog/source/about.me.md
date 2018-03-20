@@ -1,11 +1,11 @@
 type: page
 title: "关于作者"
-author: me
+author: liukaining
 
 ---
 
-## 纸小墨
+##  Liukaining's New Blog
 
-构建只为纯粹书写的博客。
 
-[http://www.chole.io/](http://www.chole.io/)
+
+致谢:[chole](http://www.chole.io/)
