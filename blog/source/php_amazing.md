@@ -10,8 +10,6 @@ preview: PHP 数值转换、进制、位运算的一个总结，避免踩坑
 ---
 
 
-[Toc]
-
 
 ## 引子 
 
@@ -33,13 +31,13 @@ $int1 = 234;
 var_dump($str1);			
 var_dump($int1);
 var_dump($str1 == $int1);		// true
-var_dump($str1 === $int1);	   // false
+var_dump($str1 === $int1);	// false
 
 
 $int2 = $str1 + 222;			
-var_dump($int2);			// int(456)
+var_dump($int2);		// int(456)
 $str2 = $int1 + "222";
-var_dump($str2);			// int(456)
+var_dump($str2);		// int(456)
 
 
 $float1 = 11.22;
@@ -58,15 +56,15 @@ $strNum{strlen($strNum)-1} = "w";
 var_dump($strNum);							// string(9) "12345678w"
 
 var_dump((int)((0.1+0.7) * 10));			// int(7)
-var_dump(((0.1+0.7) * 10));					// float(8)
+var_dump(((0.1+0.7) * 10));	// float(8)
 
-var_dump(0123);								// int(83)
-var_dump("0123");							// string(4) "0123"
-var_dump("0123"+0);							// int(123)
-var_dump("0123"+2);							// int(125)
+var_dump(0123);			// int(83)
+var_dump("0123");			// string(4) "0123"
+var_dump("0123"+0);		// int(123)
+var_dump("0123"+2);		// int(125)
 
-var_dump((int)((0.01 + 0.8) * 10));			// int(8)
-var_dump((0.01 + 0.8) * 10));				// float(8.1)
+var_dump((int)((0.01 + 0.8) * 10)); // int(8)
+var_dump((0.01 + 0.8) * 10));// float(8.1)
 ```
 
 
@@ -95,6 +93,7 @@ var_dump((0.01 + 0.8) * 10));				// float(8.1)
 	- `float ` 转换为整数时，会`向下取整`，但是如果超过可以转换的整数范围，则结果是未定义的（无效的）
 	
 	- 不能将未知的分数强制转换为整数，结果有时候会不符合预期，例如：
+	
 	``` 
 	var_dump((int)(0.1 + 0.7) * 10);
 	
@@ -205,10 +204,13 @@ echo $str[strlen($str)-1];   // 输出 g
 
 ### 位运算
 
+
+
+
 - 定义
 
 |例子 | 名称 | 结果 | 速记| 
-|---|---|---| -- |
+|-------|-------|-------|------- |
 |`$a&$b` | And 按位与 | 把`$a` 和 `$b` 都为`1` 的位设为`1`   | 全 `1` 则 `1`|
 |`$a｜$b`| Or 按位或 | 把`$a` 和 `$b`  任何一个为 `1` 的位设为`1` |有 `1` 则 `1` | 
 |`$a^$b` | Xor 按位异或 |把 `$a` 和 `$b` 一个为`1`另一个为`0` 的位设为`1` |不同则`1` |
