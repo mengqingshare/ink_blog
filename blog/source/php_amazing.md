@@ -5,9 +5,12 @@ author: me
 tags:
     - PHP
     - Tech
-preview: 你必须知道的PHP的数值转换的知识喔～
+preview: PHP 数值转换、进制、位运算的一个总结，避免踩坑
 
 ---
+
+
+[Toc]
 
 
 ## 引子 
