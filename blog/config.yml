@@ -1,5 +1,5 @@
 site:
-    title: "Liukaining's Blog"
+    title: "一只北漂程序猿"
     subtitle: "Coding & Life With You"
     limit: 10
     theme: theme
@@ -12,8 +12,8 @@ site:
 
 authors:
     me:
-        name: "LiuKaining"
-        intro: "一枚北漂程序猿"
+        name: "一只北漂程序猿"
+        intro: "一只北漂程序猿"
         avatar: "-/images/avatar_lkn.jpg"
 
 build:
